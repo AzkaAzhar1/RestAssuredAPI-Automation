@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-25T12:22:31 PKT" name="Default suite" finished-at="2025-09-25T12:22:34 PKT" duration-ms="3409">
+    <groups>
+    </groups>
+    <test started-at="2025-09-25T12:22:31 PKT" name="Default test" finished-at="2025-09-25T12:22:34 PKT" duration-ms="3409">
+      <class name="Requests.HTTPRequests">
+        <test-method signature="getusers()[pri:0, instance:Requests.HTTPRequests@7c1e2a9e]" started-at="2025-09-25T12:22:31 PKT" name="getusers" finished-at="2025-09-25T12:22:34 PKT" duration-ms="3346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getusers -->
+      </class> <!-- Requests.HTTPRequests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
