@@ -5,7 +5,7 @@
     <classes>
       <class name="Requests.OrgJson">
         <methods>
-          <include name="testPostUsingPOJO"/>
+          <include name="testPostUsingExternalJsonFile"/>
         </methods>
       </class> <!-- Requests.OrgJson -->
     </classes>

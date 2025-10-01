@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-30T17:02:28 PKT" name="Default suite" finished-at="2025-09-30T17:02:31 PKT" duration-ms="3410">
+  <suite started-at="2025-09-30T18:09:29 PKT" name="Default suite" finished-at="2025-09-30T18:09:35 PKT" duration-ms="6297">
     <groups>
     </groups>
-    <test started-at="2025-09-30T17:02:28 PKT" name="Default test" finished-at="2025-09-30T17:02:31 PKT" duration-ms="3410">
+    <test started-at="2025-09-30T18:09:29 PKT" name="Default test" finished-at="2025-09-30T18:09:35 PKT" duration-ms="6297">
       <class name="Requests.OrgJson">
-        <test-method signature="testPostUsingPOJO()[pri:0, instance:Requests.OrgJson@7c1e2a9e]" started-at="2025-09-30T17:02:28 PKT" name="testPostUsingPOJO" finished-at="2025-09-30T17:02:31 PKT" duration-ms="3345" status="FAIL">
+        <test-method signature="testPostUsingExternalJsonFile()[pri:0, instance:Requests.OrgJson@11fc564b]" started-at="2025-09-30T18:09:29 PKT" name="testPostUsingExternalJsonFile" finished-at="2025-09-30T18:09:35 PKT" duration-ms="6231" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -48,7 +48,7 @@ at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at Requests.OrgJson.testPostUsingPOJO(OrgJson.java:53)
+at Requests.OrgJson.testPostUsingExternalJsonFile(OrgJson.java:86)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -80,7 +80,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUsingPOJO -->
+        </test-method> <!-- testPostUsingExternalJsonFile -->
       </class> <!-- Requests.OrgJson -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
