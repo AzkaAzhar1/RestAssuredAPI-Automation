@@ -41,7 +41,7 @@ public class OrgJson {
 }
 	
 	//@Test
-	void testPostUsingPOJO() { //post request using POJO class 
+	void testPostUsingPOJO() { //post request using POJO class (have to create separate class for POJO) 
 		
 		POJOclass data = new POJOclass();
 		data.setName("azka");
