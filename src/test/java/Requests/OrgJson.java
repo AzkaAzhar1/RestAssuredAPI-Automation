@@ -23,7 +23,7 @@ public class OrgJson {
 		
 		JSONObject data = new JSONObject();
 		data.put("name", "Azka");
-		data.put("job", "QA Engineer");
+		data.put("job", "QA Analyst");
 		
 		given()
               .contentType("application/json")
@@ -35,7 +35,7 @@ public class OrgJson {
         .then()
                .statusCode(201)
 		       .body("name", equalTo("Azka"))
-		       .body("job", equalTo("QA Engineer"))
+		       .body("job", equalTo("QA Analyst"))
 		       .log().all();
 		
 }
