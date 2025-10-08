@@ -38,7 +38,8 @@ public class Cookies {
 		
 	}
 	
-	void getAllCookiesInfo() {
+	@Test (priority = 2)
+	void getAllCookiesInfo() { 
 		
 		Response res = given()
 				
