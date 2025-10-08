@@ -33,7 +33,7 @@ public class Cookies {
 		
 		//get single cookie info
 		String cookie_value = res.getCookie("AEC");
-		System.out.println("Value of cookie is"+ cookie_value);
+		System.out.println("Value of cookie --------->"+ cookie_value);
 		
 		
 	}
