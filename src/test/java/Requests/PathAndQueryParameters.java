@@ -8,7 +8,7 @@ public class PathAndQueryParameters {
 
 	
 	@Test 
-	void TestQueryandPathParameteres() {
+	void TestQueryAndPathParameteres() {
 		
 		//https://reqres.in/api/users?page=2
 		
