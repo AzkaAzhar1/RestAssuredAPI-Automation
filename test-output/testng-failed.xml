@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Requests.PathAndQueryParameters">
+      <class name="Requests.Headers">
         <methods>
-          <include name="TestQueryandPathParameteres"/>
+          <include name="TestHeader"/>
         </methods>
-      </class> <!-- Requests.PathAndQueryParameters -->
+      </class> <!-- Requests.Headers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

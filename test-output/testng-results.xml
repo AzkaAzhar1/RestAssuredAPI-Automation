@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-10T22:56:30 PKT" name="Default suite" finished-at="2025-10-10T22:56:34 PKT" duration-ms="3599">
+  <suite started-at="2025-10-11T02:24:41 PKT" name="Default suite" finished-at="2025-10-11T02:24:44 PKT" duration-ms="3255">
     <groups>
     </groups>
-    <test started-at="2025-10-10T22:56:30 PKT" name="Default test" finished-at="2025-10-10T22:56:34 PKT" duration-ms="3599">
-      <class name="Requests.Cookies">
-        <test-method signature="getAllCookiesInfo()[pri:2, instance:Requests.Cookies@76ed1b7c]" started-at="2025-10-10T22:56:30 PKT" name="getAllCookiesInfo" finished-at="2025-10-10T22:56:34 PKT" duration-ms="3514" status="PASS">
+    <test started-at="2025-10-11T02:24:41 PKT" name="Default test" finished-at="2025-10-11T02:24:44 PKT" duration-ms="3255">
+      <class name="Requests.Headers">
+        <test-method signature="TestHeader()[pri:0, instance:Requests.Headers@7c1e2a9e]" started-at="2025-10-11T02:24:41 PKT" name="TestHeader" finished-at="2025-10-11T02:24:44 PKT" duration-ms="3180" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAllCookiesInfo -->
-      </class> <!-- Requests.Cookies -->
+        </test-method> <!-- TestHeader -->
+      </class> <!-- Requests.Headers -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
