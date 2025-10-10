@@ -12,7 +12,7 @@ import io.restassured.response.Response;
 
 public class Cookies {
 
-	@Test (priority = 1)
+	//@Test (priority = 1)
 	void TestCookies() {
 		
 		given()
@@ -24,7 +24,7 @@ public class Cookies {
 		
 	}
 	
-	@Test (priority = 2)
+	//@Test (priority = 2)
 	void getCookieInfo() {
 		
 		Response res = given()
@@ -48,8 +48,15 @@ public class Cookies {
 		
 		//read all the keys and all values of cookies
 		
-		System.out.println(cookies_values.keySet());
 		
+		for(String k:cookies_values.keySet())
+		{
+			String cookie_value = res.getCookie(k);
+			System.out.println(k+"    "+cookie_value);
+
+		}
+		
+
 	}
 	
 }
