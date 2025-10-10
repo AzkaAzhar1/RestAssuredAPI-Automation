@@ -46,7 +46,7 @@ public class Cookies {
 				.when().get("https://www.google.com/");
 		Map<String, String> cookies_values = res.getCookies();
 		
-		//read all the keys and all values of cookies
+		//read all the keys and all values of the cookies
 		
 		
 		for(String k:cookies_values.keySet())
