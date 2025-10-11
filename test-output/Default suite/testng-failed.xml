@@ -5,7 +5,7 @@
     <classes>
       <class name="Requests.Headers">
         <methods>
-          <include name="TestHeader"/>
+          <include name="GetHeaders"/>
         </methods>
       </class> <!-- Requests.Headers -->
     </classes>
