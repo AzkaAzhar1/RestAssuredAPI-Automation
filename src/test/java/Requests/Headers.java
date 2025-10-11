@@ -5,9 +5,11 @@ import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.Test;
 
+import io.restassured.response.Response;
+
 public class Headers {
 	
-	@Test
+	//@Test
 	void TestHeader() {
 		
 		given()
@@ -23,6 +25,17 @@ public class Headers {
 	            .header("Server", "gws");
 	            
 	}
-	
-
+	@Test
+    void TestHeaders() {
+		
+		Response res = given()
+	    
+		.when()
+	           .get("https://www.google.com/");
+	      
+		//get single header info
+	         String headervalue =   res.getHeader("Content-Type");
+	         System.out.println("Value of header is:"+ headervalue);
+	         
+	}
 }
