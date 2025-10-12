@@ -49,7 +49,7 @@ public class HeadersInfo {
 		.when()
 	           .get("https://www.google.com/");
 	      
-	//capture all headers info
+	//get all headers info
 		Headers myheaders = res.getHeaders();
 		
 		for(Header hd:myheaders) 
