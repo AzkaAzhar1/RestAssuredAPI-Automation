@@ -3,6 +3,7 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
+import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ public class ParsingJsonResponse {
 	//@Test 
 	void TestJsonResponse() {
 		
-		//Aproach1 VALIDATING JSON RESPONSE USING MATCHERS
+		//Aproach1 VALIDATING JSON RESPONSE USING MATCHERS (but not recommended approach)
 		
 		given()
 		       .contentType("ContentType.JSON")
@@ -33,7 +34,9 @@ public class ParsingJsonResponse {
 	}
 	
 	//Aproach2 VALIDATING JSON RESPONSE USING ASSERTIONS (Without using `Then()`)
-	@Test 
+	
+	
+	//@Test 
 	void TestingJsonResponse() {
 		Response res = given()
 	       .contentType("ContentType.JSON")
@@ -52,5 +55,32 @@ public class ParsingJsonResponse {
 	}
 	
 	
+	@Test 
+	void TestJsonResponseBodyData() {
+	
+		Response res =	given()
+	       .contentType("ContentType.JSON")
+	
+	.when()
+	       .get("https://reqres.in/api/users?page=2");
+		
+		//To traverse entire Json response, using JSONObject class
+		
+		JSONObject Jo = new JSONObject(res.asString()); //converting response to Json object type
+		
+		for(int i = 0; i<Jo.getJSONArray("data").length();   i++) //we didn't know the length of the array thats we used getJSONArray
+		{
+			String emails = Jo.getJSONArray("data").getJSONObject(i).get("email").toString();
+			System.out.println(emails);
+		}
+		
+		
+		
+		
+		
+	       
+	       
+		
+	}
 	
 }
