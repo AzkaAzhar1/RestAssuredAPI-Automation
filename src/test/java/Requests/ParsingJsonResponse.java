@@ -55,7 +55,7 @@ public class ParsingJsonResponse {
 	}
 	
 	
-	@Test 
+	//@Test 
 	void TestJsonResponseBodyData() {
 	
 		Response res =	given()
@@ -74,13 +74,37 @@ public class ParsingJsonResponse {
 			System.out.println(emails);
 		}
 		
-		
-		
-		
-		
-	       
-	       
-		
+	
 	}
 	
-}
+	
+	@Test 
+	void TestJsonResponseSingleBodyData() {
+		Response res =	given()
+			       .contentType("ContentType.JSON")
+			
+			.when()
+			       .get("https://reqres.in/api/users?page=2");
+				
+				//To traverse entire Json response, using JSONObject class
+				
+				JSONObject Jo = new JSONObject(res.asString()); //converting response to Json object type
+				
+				boolean status = false;
+				
+				for(int i = 0; i<Jo.getJSONArray("data").length();   i++) //we didn't know the length of the array thats we used getJSONArray
+				{
+					String emails = Jo.getJSONArray("data").getJSONObject(i).get("email").toString();
+					
+				//target is to find that specific email in the response	
+					if (emails.equals("michael.lawson@reqres.in"))
+					{
+						status = true;
+						break;
+					}
+	}
+				
+				Assert.assertEquals(status, true);
+	
+	}
+	}
