@@ -37,7 +37,7 @@ public class ParsingJsonResponse {
 	
 	
 	//@Test 
-	void TestingJsonResponse() {
+	void TestingJsonResponse() { //Recommended Approach 
 		Response res = given()
 	       .contentType("ContentType.JSON")
 	
@@ -56,7 +56,7 @@ public class ParsingJsonResponse {
 	
 	
 	//@Test 
-	void TestJsonResponseBodyData() {
+	void TestJsonResponseBodyData() {  //Recommended Approach 
 	
 		Response res =	given()
 	       .contentType("ContentType.JSON")
