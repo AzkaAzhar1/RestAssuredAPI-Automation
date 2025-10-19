@@ -13,7 +13,7 @@ public class ParsingJsonResponse {
 // parsing json response body
 	
 	//@Test 
-	void TestJsonResponse() {
+	void TestJsonResponse() { //Not recommended approach 
 		
 		//Aproach1 VALIDATING JSON RESPONSE USING MATCHERS (but not recommended approach)
 		
